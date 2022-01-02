@@ -67,15 +67,21 @@ header {
 }
 
 .navigation {
-  display: flex;
-  list-style: none;
   background-color: #4ccfc1;
   color: #fff;
-  justify-content: space-between;
   min-height: 40px;
+  display: flex;
   align-items: center;
 }
-
+.navigation ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
 .nav-item a {
   text-decoration: none;
   color: #fff;
@@ -104,9 +110,10 @@ header {
     position: relative;
     left: 100%;
     transition: 0.5s;
+  }
+  .navigation ul {
     flex-direction: column;
   }
-
   .delimiter {
     display: none;
   }
@@ -491,6 +498,6 @@ footer {
     font-size: 22px;
     font-weight: 700;
   }
-  
+
 }
 /* FOOTER */
